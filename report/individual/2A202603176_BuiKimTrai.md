@@ -277,4 +277,4 @@ Không có minh chứng demo model trong bộ tài liệu nộp hiện tại, n�
 | [BuiKimTrai_bonus_persons.zip](../../src/exports/BuiKimTrai_bonus_persons.zip) | Nếu nộp B1 | Có; 9 skeleton, 2 cảnh báo giữ nguyên kèm giải thích ở B1 |
 | [BuiKimTrai_bonus_faces.zip](../../src/exports/BuiKimTrai_bonus_faces.zip) | Nếu nộp B2 | Có; 5 mặt, checker đạt |
 
-Không đưa ảnh gốc, GT, mật khẩu hoặc .env vào bộ nộp. Sau khi sửa nhãn, cần export lại và cập nhật số liệu trong báo cáo. Bước GitHub/LMS chưa được ghi là hoàn tất; xem [checklist](../../CHECKLIST_TRUOC_KHI_NOP.md).
+Không đưa ảnh gốc, GT, mật khẩu hoặc .env vào bộ nộp. Sau khi sửa nhãn, cần export lại và cập nhật số liệu trong báo cáo. Báo cáo và các file nộp đã được commit/push lên nhánh main của repository GitHub. Chưa có xác nhận nộp link repository trên LMS; thực hiện theo thông báo của lớp.
