@@ -14,7 +14,7 @@ Dữ liệu: COCO 2017 train/val và các ảnh mặt cắt từ COCO theo bộ 
 - Máy: Acer Nitro AN515-45, Windows 11 Pro, Ryzen 7 5800H, RAM 16 GB, RTX 3070 Laptop 8 GB.
 - CVAT chạy đầy đủ các dịch vụ tại lần kiểm tra.
 - Bộ ảnh riêng: có [assignment.json](../../src/exports/assignment.json), MSSV và danh sách ảnh khớp hàm chia bộ ảnh của lab.
-- Buổi làm bài học viên cung cấp: **16:30–19:30 ngày 12/11/2026 (GMT+7)**, tổng **180 phút**. Các lượt rà/sửa và xuất lại được thực hiện sau buổi; không có số liệu thời gian tách riêng để tự cộng thêm hoặc phân bổ theo CP.
+- Thời gian gán nhãn người (person), khuôn mặt (face) và cả Bonus B1/B2 do tôi nhớ lại: **16:30–19:30 ngày 12/11/2026 (GMT+7)**, tổng **180 phút** cho toàn bộ các phần này. Tôi không đo thời gian riêng theo ảnh, nhóm ảnh hoặc checkpoint. Các lượt rà/sửa và xuất lại sau buổi không có thời gian ghi riêng để cộng thêm.
 
 ## 1. Kiểm tra label (CP0)
 
@@ -29,19 +29,21 @@ Theo hướng dẫn thao tác của lab, rê chuột đúng một điểm rồi 
 
 ## 2. Số lượng đã gán và thời gian (CP1, CP2)
 
+Tôi làm toàn bộ phần **person, face và Bonus B1/B2 từ 16:30 đến 19:30 ngày 12/11/2026**, tổng **180 phút**. Tôi không bấm giờ hoặc ghi thời gian riêng cho từng ảnh, nhóm ảnh hay checkpoint; vì vậy các dòng trong bảng ghi **“Không đo riêng”**. Tổng 180 phút được ghi chung cho toàn bộ buổi gán nhãn, không phân bổ lại theo từng phần.
+
 | Nhóm ảnh | Số ảnh | Số skeleton trong bản xuất | Người dưới 60 px không gán | Poster/gương/màn hình bỏ qua | Thời gian theo nhóm |
 |---|---:|---:|---|---|---|
-| `easy` | 5 | 5 | Không có thống kê riêng | Không có thống kê riêng | Không có số liệu riêng |
-| `occluded` | 3 | 7 | Không có thống kê riêng | Không có thống kê riêng | Không có số liệu riêng |
-| `back` | 2 | 4 | Không có thống kê riêng | Không có thống kê riêng | Không có số liệu riêng |
-| `small` | 1 | 1 | Không có thống kê riêng | Không có thống kê riêng | Không có số liệu riêng |
-| `crowd` | 1 | 3 | Không có thống kê riêng | Không có thống kê riêng | Không có số liệu riêng |
-| `faces` | 8 | 8 | — | Không có thống kê riêng | Không có số liệu riêng |
+| `easy` | 5 | 5 | Không có thống kê riêng | Không có thống kê riêng | Không đo riêng |
+| `occluded` | 3 | 7 | Không có thống kê riêng | Không có thống kê riêng | Không đo riêng |
+| `back` | 2 | 4 | Không có thống kê riêng | Không có thống kê riêng | Không đo riêng |
+| `small` | 1 | 1 | Không có thống kê riêng | Không có thống kê riêng | Không đo riêng |
+| `crowd` | 1 | 3 | Không có thống kê riêng | Không có thống kê riêng | Không đo riêng |
+| `faces` | 8 | 8 | — | Không có thống kê riêng | Không đo riêng |
 
 - Tổng phần người: **12 ảnh, 20 skeleton**, gồm easy=5, occluded=7, back=4, small=1, crowd=3. Đã bổ sung người áo xanh ở **000000461389.jpg**; số lượng skeleton hiện khớp con số 20 người của đề bài. Phần cờ/vị trí vẫn được rà riêng ở mục 4.
 - Ảnh **000000381889.jpg** hiện giữ 3 skeleton. Khoảng trải điểm 19 px của người nền trong bản trước không chứng minh chiều cao thật dưới 60 px. Tổng hiện tại là 20 sau khi bổ sung người ở 000000461389.jpg; số lượng tổng không thay thế việc kiểm đủ người theo từng ảnh.
 - Tổng phần mặt: **8 ảnh, 8 skeleton**, mỗi mặt 13 điểm.
-- Mốc phút 105 và thời gian riêng CP1/CP2/CP3: không có số liệu riêng trong báo cáo; chỉ ghi tổng 180 phút học viên đã xác nhận.
+- Tiến độ ở mốc phút 105: không ghi lại. Thời gian riêng CP1/CP2/CP3: không đo riêng; không có số liệu để tách tổng 180 phút theo checkpoint. Thời gian Bonus B1/B2 đã nằm trong tổng thời gian chung nêu trên.
 - Những ảnh tốn nhiều thời gian và lý do: Các ảnh học viên xác nhận tốn nhiều thời gian gồm 000000043500.jpg, 000000381889.jpg và 000000469061.jpg. Nguyên nhân là nhiều người hoặc hai người đứng sát nhau, các bộ phận bị che, quần áo dày/rộng làm khó thấy khớp nên phải cân nhắc vị trí ước lượng. Không có số phút riêng hoặc xếp hạng một ảnh duy nhất.
 - Cột người nhỏ và đối tượng bỏ qua chưa có thống kê chính xác theo từng nhóm; không tự thay bằng số 0.
 
