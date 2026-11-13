@@ -1,0 +1,65 @@
+{
+ "mssv": "2A202603176",
+ "ten": "BuiKimTrai",
+ "pool_version": "d04-k5-v2",
+ "cvat_user": "kimtrai205",
+ "project": "d04-keypoint",
+ "persons": [
+  "000000021235.jpg",
+  "000000196283.jpg",
+  "000000294379.jpg",
+  "000000295358.jpg",
+  "000000365099.jpg",
+  "000000157271.jpg",
+  "000000461389.jpg",
+  "000000469061.jpg",
+  "000000043500.jpg",
+  "000000351176.jpg",
+  "000000438099.jpg",
+  "000000381889.jpg"
+ ],
+ "faces": [
+  "face_145751.jpg",
+  "face_147624.jpg",
+  "face_300399.jpg",
+  "face_476363.jpg",
+  "face_79591.jpg",
+  "face_196742.jpg",
+  "face_256814.jpg",
+  "face_333134.jpg"
+ ],
+ "tasks": {
+  "persons": {
+   "task_id": 13,
+   "job_id": 13,
+   "task_name": "persons-BuiKimTrai"
+  },
+  "faces": {
+   "task_id": 14,
+   "job_id": 14,
+   "task_name": "faces-BuiKimTrai"
+  },
+  "persons-extra": {
+   "task_id": 15,
+   "job_id": 15,
+   "task_name": "persons-extra-BuiKimTrai"
+  },
+  "faces-extra": {
+   "task_id": 16,
+   "job_id": 16,
+   "task_name": "faces-extra-BuiKimTrai"
+  }
+ },
+ "persons_extra": [
+  "000000213506.jpg",
+  "000000323525.jpg",
+  "000000357549.jpg"
+ ],
+ "faces_extra": [
+  "face_296417.jpg",
+  "face_317330.jpg",
+  "face_379585.jpg",
+  "face_45276.jpg",
+  "face_507166.jpg"
+ ]
+}
