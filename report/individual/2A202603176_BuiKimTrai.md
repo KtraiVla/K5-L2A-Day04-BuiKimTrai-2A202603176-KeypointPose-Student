@@ -260,7 +260,7 @@ Không có minh chứng demo model trong bộ tài liệu nộp hiện tại, n�
 - [README](../../README.md), [RULES](../../RULES.md), [CHECKPOINTS](../../CHECKPOINTS.md), [RUBRIC](../../RUBRIC.md), [SUBMISSION](../../SUBMISSION.md).
 - [Quy ước gán nhãn](../../docs/GUIDELINE.md), [thao tác CVAT](../../docs/CVAT_CHEATSHEET.md), [định dạng COCO và OKS](../../docs/COCO_KEYPOINTS.md).
 - [Schema](../../src/keypoint_schema.json), [nguồn và bộ ảnh](../../src/lab/pool.json), [script tự kiểm](../../src/check_submission.py).
-- ChatGPT/Codex được dùng để giải thích khái niệm/cảnh báo, đọc dữ liệu xuất và trạng thái job, hỗ trợ đối chiếu nhãn với ảnh, biên tập câu chữ từ ý học viên và rà soát hồ sơ nộp. Các nhận xét hỗ trợ được ghi rõ nguồn và trạng thái; không ghi các lỗi chưa sửa là đã sửa. Không dùng model hoặc GT COCO để sinh điểm trong đợt hỗ trợ này. Mục ca khó, review và tự đánh giá dựa trên job thật, ý kiến và quyết định do học viên xác nhận; hỗ trợ biên tập không thay thế trách nhiệm giải thích các lựa chọn của học viên.
+- Các quyết định gán nhãn, chỉnh sửa hoặc giữ nguyên điểm sau khi review do tôi tự đưa ra trên job CVAT của mình. Với các mục ca khó, tự review và tự đánh giá, tôi cung cấp ý kiến, trải nghiệm và lý do lựa chọn; tôi nhờ ChatGPT/Codex chỉnh câu từ để diễn đạt rõ ràng, mạch lạc hơn. Công cụ cũng hỗ trợ giải thích khái niệm/cảnh báo, kiểm tra dữ liệu xuất, trạng thái job và hồ sơ nộp. Không dùng model hoặc GT COCO để sinh keypoint.
 
 ## Danh mục file nộp và trạng thái
 
